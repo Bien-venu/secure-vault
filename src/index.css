@@ -3,8 +3,8 @@
 
 /* Now you can define variables or global styles */
 @theme inline {
-  --color-background: #0e0f11;
-  --color-foreground: #161719;
+  --color-background: #000000;
+  --color-foreground: #0e0f11;
   --color-selected: #2a2d34;
   --color-list: #1e1f23;
   --color-header: #161719;
@@ -22,7 +22,7 @@
 }
 
 * {
-   font-family: "Neue Haas Display", sans-serif;
+  font-family: "Neue Haas Display", sans-serif;
   outline: none;
   font-weight: 100;
 }
