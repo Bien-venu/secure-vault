@@ -45,7 +45,7 @@ const QuickAccess = () => {
   const allFiles = getAllFiles(data);
 
   const randomFolders = getRandomItems(allFolders, 4);
-  const randomFiles = getRandomItems(allFiles, 5);
+  const randomFiles = getRandomItems(allFiles, 4);
   const tableFiles = getRandomItems(allFiles, 6);
 
   return (
@@ -83,7 +83,7 @@ const QuickAccess = () => {
         {/* Files */}
         <div className="flex flex-col gap-2">
           <h2 className="text-white/50">New Files</h2>
-          <div className="grid grid-cols-5 gap-2">
+          <div className="grid grid-cols-4 gap-2">
             {randomFiles.map((file) => (
               <FileCard key={file.id} file={file} />
             ))}
