@@ -75,12 +75,12 @@ const FileCard = ({ file }) => {
   const { name, ext } = getFileInfo(file.name);
 
   return (
-    <div className="w- flex items-center justify-start gap-4 rounded-xl border border-white/10 p-2 px-3 transition">
-      <div className="bg-selected flex justify-center rounded-xl p-2">
+    <div className="flex w-full items-center justify-start gap-2 overflow-hidden rounded-xl border border-white/10 p-2 px-3 transition">
+      <div className="bg-selected flex w-fit justify-center rounded-xl p-2">
         {getFileIcon(file.name)}
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div className="flex w-full flex-col gap-2 overflow-hidden">
         <h3 className="truncate text-sm">{name}</h3>
         <p className="text-xs text-gray-500">
           {file.size} • {ext}
