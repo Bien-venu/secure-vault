@@ -1,10 +1,10 @@
 const Table = ({ tableFiles }) => {
   return (
-    <div className="flex h-fit w-full flex-col gap-2 ">
+    <div className="flex h-full  overflow-hidden w-full flex-col gap-2 ">
       <h2 className="text-white/50">Recent Files</h2>
-      <div className="flex h-full w-full overflow-hidden rounded-xl border border-white/10">
+      <div className="flex h-full w-full overflow-auto rounded-xl border border-white/10">
         <table className="h-full w-full overflow-hidden text-left">
-          <thead>
+          <thead className=" sticky top-0">
             <tr className="-b h-12 border-white/20">
               <th className="flex h-full items-center justify-center py-2">
                 <input

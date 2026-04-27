@@ -51,16 +51,16 @@ const QuickAccess = () => {
   return (
     <div className="flex h-full w-full flex-col gap-6 overflow-hidden px-4 py-2">
       {/* Header */}
-      <div className="flex flex-col gap-0">
+      <div className="flex h-fit flex-col gap-0">
         <h1 className="text-3xl">Welcome back, Bienvenu!</h1>
         <p className="text-white/50">
           Your files stay safe, organized and always within reach.
         </p>
       </div>
 
-      <div className="flex flex-col w-full gap-6 overflow-auto">
+      <div className="flex h-full w-full flex-col gap-6 overflow-hidden">
         {/* Folders */}
-        <div className="flex flex-col gap-2">
+        <div className="flex h-fit flex-col gap-2">
           <h2 className="text-white/50">Quick Folders</h2>
           <div className="grid grid-cols-4 gap-2">
             {randomFolders.map((folder) => (
@@ -81,7 +81,7 @@ const QuickAccess = () => {
         </div>
 
         {/* Files */}
-        <div className="flex flex-col gap-2">
+        <div className="flex h-fit flex-col gap-2">
           <h2 className="text-white/50">New Files</h2>
           <div className="grid grid-cols-4 gap-2">
             {randomFiles.map((file) => (
